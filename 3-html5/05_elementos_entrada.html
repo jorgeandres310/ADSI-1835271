@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>nuevos elementos de entrada</title>
+	<form action="" method="post">
+		<div>
+			<label>nombre:</label>
+			<input type="text" placeholder="nombre completo" autofocus required>
+		</div>
+</head>
+<body>
+	<h1>nuevos elementos de entrada</h1>
+	<form action=""method="post">
+		<label for>color: </label>
+		<input type="color" oninput="pcolor.value=this.value">
+		<output id="ocolor"></output>
+	</div>
+	<!-- -->
+	<div>
+		<label for>fecha: </label>
+		<input type="date" oniput="odate.value=this.value">
+		<output id="odate"></output>
+	</div>
+	<!-- -->
+	<label> nuemero 1: </label>
+	<input type="number" min="0" max="10" step="2" id="num1" oniput=
+	"osuma.value=parseInt(this.value+num2.value)" value="0"
+	required>
+	>
+	<label>numero 2:</label>
+	<input type="number" min="0" max="10" step="2" id="num2" oniput="osuma.value=parseINt(this.value)+parseInt(num1.value)" value="0"
+	>
+	<output id="osuma"></output>
+</div>
+<!-- -->
+<div>
+	<label >rango</label>
+	<input type="range" min="1" max="100" oniput="orango.value=this.value">
+	<output id=>"orange"</output>
+</div>
+<!-- -->
+<div>
+	<label> tiempo: </label>
+	<input type="time" autofocus>
+</div>
+<div>
+	<input list="lenguajes">
+	<datalist id="lenguajes">
+		<option value="python">python</option>
+		<option value="ruby">ruby</option>
+		<option value="java">java</option>
+		<option value="csharp">c#</option>
+	</datalist>
+</div>
+<div>
+	<button type="submit"> enviar datos </button>
+</div>
+</body>
+</html>
