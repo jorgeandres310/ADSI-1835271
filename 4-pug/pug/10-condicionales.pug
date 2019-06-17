@@ -1,0 +1,14 @@
+doctype
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		title condocionales
+	body
+		h1 condicionales 
+		- var edad = 17 
+		if edad >= 18 
+			img(src='imgs/success.png')
+			p Usted puede votar 
+		else
+			img(src='imgs/fail.png')
+			p Usted no puede votar
