@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formularios</title>
+</head>
+<body>
+  <h1>Formularios</h1>
+  <form action="" method="post">
+    <fieldset>
+    <legend>Datos personales</legend>
+  <div>
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre">
+</div>
+<div>
+    <label for="clave">Contraseña</label>
+    <input type="password" id="clave" name="clave">
+</div>
+<div>
+  <label for="foto">Foto</label>
+  <input type="file" id="foto" name="foto">
+</div>
+<div>
+  <label for="genero">Genero</label>
+  <select name="genero" id="genero">
+    <option value="" selected>Selecciones el Genero</option>
+    <option value="F">Femenino</option>
+    <option value="M">Masculino</option>
+  </select>
+</div>
+<div>
+  <label for="descripcion">Descripcion:
+  </label>
+  <br>
+  <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+</div>
+
+    </fieldset>
+    <fieldset>
+      <legend>Datos sena</legend>
+      <input type="hidden" name="centro" value="CPIC">
+      <div>
+        Seleccione uno o más módulos
+        <br>
+        <label>
+          <input type="checkbox" name="modulo">
+          Analisis
+          </label>
+          <br>
+          <label>
+          <input type="checkbox" name="modulo">
+          Desarrollo
+        </label>
+        <br>
+        <label>
+        <input type="checkbox" name="modulo">
+        comunicacion
+      </label>
+      <br>
+      <label>
+      <input type="checkbox" name="modulo">
+      ambiental
+    </label>
+      </div>
+<br>
+      <div>
+        Seleccione la Titulacion
+        <br>
+        <label for="">
+          <input type="radio" name="titulacion">
+          ADSI
+        </label>
+        <br>
+        <label for="">
+          <input type="radio" name="titulacion">
+          Electricidad industrial
+        </label>
+        <br>
+        <label for="">
+          <input type="radio" name="titulacion">
+          Soldadura
+        </label>
+      </div>
+      <label for="">
+        <input type="radio" name="titulacion">
+        Automotriz
+      </label>
+    </fieldset>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="limpiar">
+
+  </form>
+</body>
+</html>

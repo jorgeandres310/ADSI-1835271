@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <table border = "1" width=200px">
+    <tr>
+      <td>x</td>
+      <td colspan="3"></td>
+      <td rowspan="4"></td>
+      <td rowspan="5"></td>
+    </tr>
+    <tr>
+      <td>x</td>
+      <td>x</td>
+      <td colspan="2"></td>
+
+    </tr>
+    <tr>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+      <td>x</td>
+    </tr>
+  </table>
+
+<!-- table[border=1][width=200]>(tr>td{x}+td[colspan=3]+td[rowspan=4]+td[rowspan=5])+(tr>td{x}*2+td[colspan=2])+(tr>td{x*3}+td)+(tr>td{x}*4)+(tr>td{x}*5)+(tr>td{x}*6) -->
+</body>
+</html>
