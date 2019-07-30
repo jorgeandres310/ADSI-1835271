@@ -5,15 +5,10 @@ html(lang="es")
 		title Atributos (Estilo)
 	body
 		// Estilos en los atributos
-		h1(style={
-				background: 'black',
-				color: 'white', 
-				padding: '20px'}) Atributos (Estilo)
+		h1(style={background: 'crimson',color: 'white',padding: '20px'}) Atributos (Estilo)
 		// Atributos Booleanos
-		label(for='enclase')
-			span Usted esta en Clase?
-			input(type='checkbox' checked=true id='enclase')
-				//variables en los atributos
-				- var colores = ['yellow', 'blue', 'red']
-				a(class=colores) colombia 
-
+		span Usted esta en Clase ?
+		input(type='checkbox' cheked=true id='enclase')
+		// Variables en los Atributos
+		- var colores = ['yellow','blue','red']
+		a(class=colores) Colombia

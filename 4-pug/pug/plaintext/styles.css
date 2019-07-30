@@ -1,8 +1,7 @@
-body {
-	background-color: #83bbff;
-	color:#333;
+body{
+    background-color: silver;
+    color: #444;
 }
-h1 {
-	font: 4em Arial;
-	text-aligh: center;
+h1{
+    text-align: center;
 }

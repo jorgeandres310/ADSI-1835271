@@ -2,15 +2,15 @@ doctype
 html(lang="es")
 	head
 		meta(charset="UTF-8")
-		title casos
+		title Casos
 	body
-		h1 casos
-		- var seguidores = 120 
+		h1 Casos
+		- var seguidores = 2
 		case seguidores
-			when 0 
-			when 1
-				p usted tiene muy poco seguidores 
+			when 0
+			when 1	
+				p Usted tiene muy pocos seguidores
 			when 2
-				p usted tiene #{seguidores} seguidores
-			default
-				p usted tiene muchos seguidores
+				p Usted tiene #{seguidores} seguidores
+			default 
+				p Usted tiene muchos seguidores
