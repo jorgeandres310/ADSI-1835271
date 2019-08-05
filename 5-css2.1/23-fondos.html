@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fondos</title>
+    <style>
+        body {
+            background: url(imags/as.png)
+        }
+        h1, h3,h4 {
+            text-align: center;
+        }
+        section.bg {
+            border: 2px solid #333;
+            height: 400px;
+            margin: 20px auto;
+            width: 800px;
+
+        }
+        section.bg1 {
+            background-color: hsl(266, 100%, 35%);
+        }
+        section.bg2 {
+            background-image: url(imags/bc.png)
+        }
+        section.bg3,
+        section.bg4,
+        section.bg5,
+        section.bg6, 
+        section.bg7,
+        section.bg8,
+        section.bg9 {
+            background-image : url(imags/bm.jpg);
+            background-repeat: no-repeat;
+        }
+        section.bg3 { background-repeat: repeat; }
+        section.bg4 { background-repeat: repeat-x; }
+        section.bg5 { background-repeat: repeat-y; }
+        section.bg6 { background-repeat: no-repeat; }
+
+        section.bg7 { background-position: top left; }
+        section.bg8 { background-position: center center; }
+        section.bg9 { background-position: bottom right; }
+
+        section.bg10
+        section.bg11 {
+            /* forma corta */
+            background: transparent url(imags/as.png);
+            overflow: scroll;
+        }
+        section.bg10 p,
+        section.bg11 p {
+            background-color: #000000;
+            color: white;
+            padding: 20px;
+        }
+        section.bg10 { background-position: scroll;}
+        section.bg11 { background-position: fixed;}
+
+    </style>
+</head>
+<body>
+    <h1>fondos (color, imagen, repeticion, posicion, comportamiento)</h1>
+    <h1>fondos</h1>
+    <h4>color de fondo</h4>
+    <section class="bg bg1"></section>
+    <h4>imagen de fondo</h4>
+    <section class="bg bg2"></section>
+    <h4>repetir fondo:</h4>
+    <h4>repetir</h4>
+    <section class="bg bg3"></section>
+    <h4>repetir x</h4>
+    <section class="bg bg4"></section>
+    <h4>repetir y</h4>
+    <section class="bg bg5"></section>
+    <h4>no repetir</h4>
+    <section class="bg bg6"></section>
+    <h4>posicion fondo</h4>
+    <h4>center center</h4>
+    <section class="bg bg7"></section>
+    <h4>botton right</h4>
+    <section class="bg bg8"></section>
+    <h4>bottom right</h4>
+    <section class="bg bg9"></section>
+
+</body>
+</html>

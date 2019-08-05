@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bordesm( ancho, estilos, color)</title>
+    <style>
+        section.box {
+            border-style: solid;
+            border-color: black;
+            height: 140px;
+            width: 280px;
+        }
+        section.box1 {
+            /* ancho bordes */
+            border-top-width: thin;
+            border-right-width: thick;
+            border-bottom-width: 10px;
+            border-left-width: 20px;
+            /* forma corta */
+            border-width: thin thick 10px 20px;
+        }
+        section.box2 {
+            /* color bordes */
+            border-top-color: orange;
+            border-right-color: blue;
+            border-bottom-color: pink;
+            border-left-color: lime;
+            /*forma corta*/
+            border-color: orange blue pink lime;
+        }
+        section.box3 {
+            /* estilos bordes */
+            border-top-style: solid;
+            border-right-style: dotted;
+            border-bottom-style: dashed;
+            border-left-style: double;
+            /*forma corta*/
+            border-style: solid dotted dashed double;
+        }
+        section.box4 {
+            border: 20px solid crimson;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>bordes ( ancho, estilos, color)</h1>
+    <h3>ancho:</h3>
+    <section class="box box1"></section>
+    <h3>color:</h3>
+    <section class="box box2"></section>
+    <h3>estilo</h3>
+    <section class="box box3"></section>
+    <h3>forma corta:</h3>
+    <section class="box box4"></section>
+</body>
+</html>
