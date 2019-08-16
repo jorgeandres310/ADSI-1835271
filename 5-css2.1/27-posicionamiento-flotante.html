@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>posicionamiento (flotante)</title>
+    <style>
+        section {
+            border: 1px solid #555;
+            padding: 10px;
+            margin: 20px auto;
+            width: 360px;
+        }
+        section div {
+            background-color: #fff;
+            border: 1px solid #555;
+            padding: 20px 10px;
+            width: 95px;
+        }
+        section div.box1 {
+            float: right;
+        }
+        section img {
+            float: left;
+
+        }
+        section p.clear {
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>posicionamiento (flotante)</h1>
+    <section>
+        <div class="box1">caja 1</div>
+        <div class="box2">caja 2</div>
+        <div class="box3">caja 3</div>
+    </section>
+    <section>
+        <img src="imags/bm.jpg">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta placeat quas commodi! Expedita, laborum!</p>
+        <p class="clear">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio pariatur explicabo atque aut esse.</p>
+    </section>
+</body>
+</html>

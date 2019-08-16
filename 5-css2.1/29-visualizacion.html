@@ -1,0 +1,81 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>29-visualizacion (display/visibility</title>
+    <style>
+        h1 {
+            color: darkslategray;
+            text-align: center;
+        }
+        main {
+            margin: 0px auto;
+            width: 960px;
+        }
+        main section {
+            border: 1px solid rgb(52, 88, 61);
+            display: inline-block;
+            padding: 10px;
+            vertical-align: top;
+            width: 449px;
+        }
+        main section div {
+            border: 1px solid rgb(55, 133, 126);
+            display: inline-block;
+            padding: 20px;
+            margin: 40px
+            widht: 20px;
+        }
+        main section.display div.none {
+            display: none;
+        }
+        main section.display div.hidden {
+            display: hidden;
+        }
+        a.toblock {
+            border: 1px solid #555;
+            display: block;
+            padding: 10px;
+        }
+        a.toinline {
+            border: 1px solid #555;
+            display: inline;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>posicionamiento (normal/estatico)</h1>
+    <main>
+        <section class="display">
+        <h4>5 = display: none</h4>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div class="none">5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </section>
+    <section class="visibility">
+        <h4>5 = visibility = hidden/h4>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div class="hidden">5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </section>
+    </main>
+    <a href=""class="toblock">elemenento linea a bloque</a>
+    <div class="toinline">elemenento bloque a linea</div>
+</body>
+</html>
