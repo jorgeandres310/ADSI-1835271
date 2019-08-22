@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>contenido sobrante (overflow)</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        section.overflow {
+            margin: 10px auto;
+            width: 500px;
+        }
+        section.overflow div {
+            bottom: 1px solid #999;
+            display:inline-block;
+            height: 250px;
+            padding: 10px;
+            vertical-align: top;
+            width: 140px;
+        }
+        section.overflow div h3 {
+            background-color: #ccc;
+            padding: 10px;
+            margin: 0px;
+        }
+        section.overflow div.box1 {overflow: visible}
+        section.overflow div.box2 {overflow: hidden}
+        section.overflow div.box3 {overflow: scroll}
+    </style>
+</head>
+<body>
+    <h1>contenido sobrante (overflow)</h1>
+    <section class="overflow">
+        <div class="box1">
+            <h3>overflow:visible</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nesciunt itaque autem totam placeat rerum, voluptatum aut ut esse deserunt sunt nulla vitae hic consequatur temporibus omnis cupiditate ad nemo! Odit voluptate omnis expedita harum. Odit, mollitia repudiandae ipsam atque harum sit. Nihil at illo unde, maxime laboriosam sapiente quisquam?</p>
+        </div>
+        <div class="box2">
+            <h3>overflow:visible</h3>
+            <p>Nostrum provident autem eos deleniti nisi alias excepturi dignissimos repudiandae qui inventore consequatur esse culpa, minima dolorem blanditiis ipsam libero, explicabo at a cum? Iure esse neque cumque quae ab, libero excepturi repudiandae. Quidem tenetur, adipisci animi at expedita commodi fugit perferendis consequuntur vitae minima. Enim doloremque culpa illum accusamus.</p>
+        </div>
+        <div class="box3">
+            <h3>overflow:visible</h3>
+            <p>Eum odit impedit ut aperiam recusandae neque nostrum magni vel ab. Labore tenetur nisi magni quidem ad fuga eligendi vel? Ex, vel ipsum minus distinctio ab odio perferendis earum a nostrum dignissimos. Illum, dolorum repellendus similique impedit nostrum totam commodi, nemo sit, quas aliquam veritatis. Ullam corrupti itaque fugiat aspernatur?</p>
+        </div>
+    </section>
+</body>
+</html>
