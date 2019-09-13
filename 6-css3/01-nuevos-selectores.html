@@ -1,0 +1,101 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nuevos Selectores</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        /* li:first-of-type */
+        ul.planguanges li:first-of-type {
+            background-color: #7ab862;
+            color: #3e5E35
+        }
+        /* li:last-of-type */
+        ul.fronted li:last-of-type {
+            background-color: #7ab862;
+            color: #3e5E35
+        }
+           /* li:last-of-type */
+           ul.databases li:nth-child(3) {
+            background-color: #7ab862;
+            color: #3e5E35
+           }
+           /*article#home:target */
+           article#home:target,
+           article#services:target,
+           article#contact:target {
+               background-color: red;
+               color: #3e5e35;
+               display: block;
+           }
+           /* ::selection */
+           p.yellow::selection{
+               background-color: yellow;
+           }
+           p.blue::selection{
+               background-color: blue;
+           }
+           p.red::selection{
+               background-color: red;
+           }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Nuevos Selectores</h1>
+        </header>
+        <section>
+            <h3>li:first-of-type (Selecciona el primer elemento de tipo li)</h3>
+            <ul class="planguanges">
+                <li>Python</li>
+                <li>Ruby</li>
+                <li>PHP</li>            
+            </ul>
+            <h3>li:last-of-type (Selecciona el ultimo elemento de tipo li)</h3>
+            <ul class="fronted">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>         
+            </ul>
+            <h3>Li:nth-child(n) (selecciona el elemento numero n)</h3>
+            <ul class="databases">
+                <li>MySQL</li>
+                <li>Maria DB</li>
+                <li>Postgres</li>
+                <li>SQL Seerver</li>
+                <li>Oracle</li>
+            </ul>
+            <h3>section: target (selecciona el ancla activa)</h3>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#services">Home</a>
+                <a href="#contact">Home</a>
+            </nav>
+            <section id="home">
+                <h4>Home</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quas dolores similique laborum asperiores harum atque reiciendis possimus quasi rerum explicabo laboriosam, reprehenderit tempora autem nihil? Praesentium ab maiores ratione.</p>
+            </section>
+            <section id="services">
+                <h4>Services</h4>
+                <p>Odit officia perferendis sed quia consectetur fugit explicabo voluptate fuga porro omnis. Autem officiis magni tempora animi iusto porro ipsa nesciunt? Repellat libero numquam beatae soluta minus inventore ipsam ducimus?</p>
+            </section>
+            <section id="Contact">
+                <h4>Contact</h4>
+                <p>Dolor ratione et iure, enim accusantium voluptate maiores nesciunt quod maxime quasi! Ipsam maiores dolorum vero consectetur fugit cum error ratione explicabo iusto inventore! Quo tempore aliquam deserunt itaque eligendi!</p>
+            </article>
+            <h3>:: selection ()</h3>
+            <p class="yellow">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque esse perspiciatis nobis! Fugiat error facere quo dicta aspernatur autem, labore cumque quae suscipit doloribus debitis nihil numquam quaerat accusantium soluta!
+            </p>
+            <p class="blue">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora a aliquid quidem quibusdam corrupti officia sint reiciendis rem voluptatum, amet et nesciunt velit sunt provident! Repellendus quia facere cumque voluptatibus!
+            </p>
+            <p class="red">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quisquam illum expedita optio, reiciendis molestiae quam, dolor officiis maxime laudantium sint! Quidem ullam non architecto doloribus assumenda beatae eaque illo!
+            </p>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
