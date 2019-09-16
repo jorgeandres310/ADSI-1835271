@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/master.css">
+    <title>transiciones</title>
+    <style>
+        div.box {
+            border: 2px solid black;
+            height: 300px;
+            margin: 20px auto;
+            width: 200px;
+
+ 
+        }
+        div.box1 {
+            background-color: crimson;
+            transition: width 1s ease-in;
+        }
+        div.box1:hover {
+            background-color: teal;
+            width: 600px;
+        }
+        div.box2 {
+            background: url(imgs/yugui.jpg);
+            background-color: aqua;
+            transition: all 1s ease-out;
+        }
+        div.box2:hover {
+            transform: rotate(180deg);
+        }
+        div.box3 {
+            background-color: orange;
+            transition: all 1s linear;
+        }
+        div.box3:hover {
+            opacity: 0.5;
+            transform: scale(0.5);
+        }
+        div.box4:hover {
+            transform: translateX(200px);
+        }
+        div.box5 {
+            background-color: lime;
+            transition: width 1s,
+                        height 1s 1s,
+                        backgrounds 1s 2s;
+        }
+        div.box5:hover {
+
+            background-color: midnightblue;
+            width: 400px;
+            height: 400px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>transiciones</h1>
+            <section>
+                <div class="box box1"></div>
+                <div class="box box2"></div>
+                <div class="box box3"></div>
+                <div class="box box4"></div>
+                <div class="box box5"></div>
+            </section>
+        </header>
+    </main>
+    
+</body>
+</html>

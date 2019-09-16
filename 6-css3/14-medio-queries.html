@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Queries</title>
+    <style>
+        * {
+            transition: all .5s ease-in;
+        }
+        body{
+            background-color: #013571;
+            color: rgba(255,255,255,0.6);
+            font: 16px, Tahoma;
+        }
+        main {
+            border: 10px solid rgba(255,255,255,0.6);
+            margin: 20px auto;
+            width: 950px;
+        }
+        main figure.logo{
+            background: url(imgs/pepsi01.png) no-repeat center;
+            height: 354px;
+            margin: 0px auto;
+            width: 919px;
+        }
+        main h1 small.bp2,
+        main h1 small.bp3 {
+            display: none;
+        }
+        main p{
+            line-height: 1.8em;
+            text-align: justify;
+        }
+        @media (max-width: 1024px){
+            main{
+                width:740px;
+            }
+            main figure.logo{
+                background: url(imgs/pepsi02.png) no-repeat center;
+                height: 370px;
+                width: 360px;
+            }
+            main h1 small.bp1,
+            main h1 small.bp3{
+                display: none;
+            }  
+            main h1 small.bp2{
+                display: inline;
+            }   
+            @media (max-width: 720px){
+                main{
+                    width: 370px;
+                }
+                main figure.logo{
+                background: url(imgs/pepsi03.png) no-repeat center;
+                height: 156px;
+                margin: 0px auto;
+                width: 162px;
+                }
+                main h1 small.bp2,
+                main h1 small.bp3 {
+                    display: none;
+                }
+                main h1 small.bp3{
+                display: inline;
+                 
+            }      
+        }
+    </style>
+</head>
+<body>
+    <main>    
+        <figure class="logo"></figure>  
+        <h1>Media Queries 
+            <small class="bp1">( Desktop: 1024px )</small>
+            <small class="bp2">( Tablet: 800px )</small> 
+            <small class="bp3">( Mobile: 400px )</small>
+        </h1> 
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi magni perspiciatis veritatis dolorum provident omnis. Consequatur minima dolor est, laudantium, cumque fugiat eligendi repudiandae exercitationem iure, dignissimos velit debitis ipsum voluptatem. Quam sapiente, quod necessitatibus laboriosam similique porro vel et, ut commodi deleniti nesciunt vitae dicta repellendus est. Ab sunt perferendis rem quas repudiandae sapiente, vero quam maxime sed blanditiis. Eos assumenda maxime exercitationem, labore quo magnam placeat illum eius soluta ducimus deleniti voluptatum dignissimos voluptate odit tempore blanditiis temporibus repudiandae modi nisi nobis enim dolorem molestias minima. Nemo beatae reiciendis ut sunt distinctio deserunt animi iure ipsam nesciunt ad cupiditate, ipsum similique molestias illo culpa minima facere? Vero ducimus, rem architecto nihil magni optio tenetur temporibus tempora, fuga eius mollitia sunt recusandae dignissimos molestias cupiditate sed at esse doloribus et voluptate. Architecto exercitationem veniam pariatur dolores voluptatem unde beatae deserunt saepe facilis soluta voluptates cum nisi ut ipsam tempora minima quaerat, repellendus asperiores facere sit nesciunt odit necessitatibus repudiandae eum. Amet eius libero corrupti enim laborum deleniti totam error aut saepe dolores cumque, consectetur earum beatae ex! Natus consequatur doloremque rem fugiat eum molestias, perspiciatis reiciendis quis ratione optio! Amet saepe explicabo mollitia delectus. Reprehenderit rem alias blanditiis quos.        </p>   
+    </main>
+</body>
+</html>
