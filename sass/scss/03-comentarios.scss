@@ -1,0 +1,18 @@
+//
+
+/* si se ve*/
+
+// este es un comentario de lineas
+// este comentario solo es de SASS
+// no se rederiza en el CSS
+ section.content {
+     /* 
+        este es un comentario de bloque,
+        si es visible en el CSS.
+    */
+    p {
+        line-height: 1.6em;
+        word-spacing: 0.6em;
+        text-align: justify;
+    }
+ }

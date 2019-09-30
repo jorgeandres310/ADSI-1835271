@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+  font: 16px arial;
+}
+body main {
+  background-color: purple;
+  padding: 20px;
+  margin: 20px auto;
+  width: 960px;
+}
+body main header {
+  color: #ffffff;
+  border-bottom: 2px solid #000000;
+  text-align: center;
+}
+body main section.content {
+  color: #443355;
+}
+body main section.content h2 h3 {
+  columns: #989898;
+  border-bottom: 2px solid #007650;
+  text-align: center;
+}
