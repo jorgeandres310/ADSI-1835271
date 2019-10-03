@@ -29,10 +29,10 @@ main div.slider #slider5:target ~ div.sliders ~ div.controls a:nth-child(5) {
   transform: scale(1.1);
 }
 main div.slider #slider2:target ~ div.sliders {
-  left: -960px;
+  left: -940px;
 }
 main div.slider #slider3:target ~ div.sliders {
-  left: -1920px;
+  left: -1900px;
 }
 main div.slider #slider4:target ~ div.sliders {
   left: -2880px;
