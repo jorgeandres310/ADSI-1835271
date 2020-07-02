@@ -1,0 +1,49 @@
+base de datos crear 
+CREATE DATABASE universe;
+use universe;
+CREATE TABLE planets(     le damos enter 
+-> id INT AUTO_INCREMENT,
+->name VARCHAR(32) NOT NULL UNIQUE,
+->ordern INT NOT NULL,
+->moons INT NOT NULL,
+-> PRIMARY KEY(id));
+
+show tables;
+describe planets;
+
+C:\xampp\mysql\bin>mysql -h localhost -u root -p(.p si no tiene contraseña)
+
+INSERT INTO planets VALUES (
+->DEFAULT,
+->'Mercurio',
+->1,
+->0);
+
+SELECT * 
+-> FROM planets;
+
+INSERT INTO planets VALUES (DEFAULT, 'tierra', 3,1);
+
+
+
+
+mongo 
+show dbs
+use local
+use adsimongo
+show collections
+db.users.insert({firstname: "Jeremias", lastname; "springfiled"})
+show collection
+show dbs
+db.users.insert({"Homero", lastname: "Simpson"})
+db.users.find()
+db.user.find().pretty()
+{
+"_id": ObsectId(""),
+"firstname":"Jeremias",
+"lastname": "Springfiled"
+}
+{
+db.roles.insert({name: "Admin", order: 1})
+	
+}
